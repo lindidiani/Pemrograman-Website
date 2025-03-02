@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindi Diani Tirasafira</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <style>
+        body {
+            font-family: "Popins";
+            background-color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: left;
+        }
+        .container {
+            max-width: 215px;
+            width: 100%;
+            background-color: #ffe6ee;
+            padding: 40px;
+            padding-bottom: 10px;
+            box-shadow: 0px 4 px 8px rgba(0, 0, 0, 0,1);
+            border-radius: 10px;
+            margin-left: 200px;
+        }
+        .img {
+            display: block;
+            width: 110px;
+            height: 150px;
+            object-fit: cover;
+            margin-left: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .nama {
+            margin-left: 18px;
+            font-size: 20px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            font-size: 13px;
+            margin-top: 8px;
+            margin-left: 70px;
+        }
+        .social-icons a {
+            color: #a3a6a7;
+        }
+        .social-icons a:hover {
+            color: #333;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            margin-left: 45px;
+            margin-top: 15px;
+        }
+        .menu button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff8fa3;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 17px;
+            margin-left: 0px;
+            width: 130px;
+        }
+        .menu button:hover {
+            background-color: #e06b85;
+        }
+        footer {
+            color:slategray;
+            font-size: 10px;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        .container-2 {
+            max-width: 420px;
+            width: 100%;
+            background-color: #ffe6ee;
+            padding: 40px;
+            box-shadow: 0px 4 px 8px rgba(0, 0, 0, 0,1);
+            border-radius: 10px;
+            margin-left: 18px;
+        }
+        .frame-container {
+            flex-grow: 1;
+            padding-left: 3%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 440px;
+            overflow-y: auto;
+        }
+        .intro-kontak {
+            text-align: center;
+            font-size: 30px;
+            font-family: "Cooper Black";
+        }
+        h1 {
+            margin-bottom: 5px;
+        }
+        p {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-left: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .kotak-input {
+            width: 365px;
+            padding: 6px;
+            box-sizing:border-box;
+            margin-bottom: 10px;
+        }
+        textarea {
+            resize: vertical;
+            width: 365px;
+            margin-bottom: 10px;
+        }
+        ::placeholder {
+            font-family: "Courier New";
+        }
+        select {
+            width: 365px;
+            max-width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+        button {
+            margin-top: 25px;
+            margin-left: 160px;
+            margin-bottom: 30px;
+            padding: 5px;
+            cursor: pointer;
+            border: none;
+            background-color: #ff8fa3;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 10px;
+            width: 70px;
+        }
+        button:hover {
+            background-color: #d34f6c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="fotoremovebg.jpg" alt="Foto Diri" class="img">
+        <strong class="nama" >Lindi Diani Tirasafira</strong>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/lindidiani/?hl=en" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/lindi-diani-tirasafira-a49b66350/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:lindi.tirasafira@gmail.com" title="Gmail">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+628123456789" title="Telepon">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html"><button>Beranda</button></a>
+            <a href="resume.html"><button>Resume</button></a>
+            <a href="kontak.html"><button>Kontak</button></a>
+        </div>
+        <footer>
+            <p>&copy; 2025 Lindi Diani Tirasafira. All Right Reserved.</p>
+        </footer>
+    </div>
+    <div class="container-2">
+        <div class="frame-container">
+            <h1 class="intro-kontak">Kontak Kami</h1>
+            <p align="center">Silahkan tinggalkan pesan Anda pada kolom yang tersedia!</p>
+            <div class="form-group">
+                <label for="Nama">Nama Lengkap</label>
+                <input type="text" name="Nama" class="kotak-input" placeholder="Masukkan nama Anda" required />
+                <label for="Email">Email</label>
+                <input type="email" name="Email" class="kotak-input" placeholder="Masukkan email Anda" required />
+                <label for="Subjek">Subjek</label>
+                <input type="text" name="Subjek" class="kotak-input" placeholder="Judul pesan" required />
+                <label for="Pesan">Pesan</label>
+                <textarea name="Pesan" rows="5" placeholder="Tulis pesan Anda di sini" required></textarea>
+                <label for="kategori">Kategori Pesan</label>
+                <select name="kategori">
+                    <optgroup label="Pilih kategori pesan">
+                        <option value="personal">Personal</option>
+                        <option value="kerjasama">Kerjasama</option>
+                    </optgroup>
+                </select>
+                <button type="submit">Kirim</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
